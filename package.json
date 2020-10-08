@@ -2,7 +2,7 @@
     "name": "todo-app",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://chomusuke-spec.github.io/todo-app",
+    "homepage": "https://huutri220820.github.io/todo-app",
     "dependencies": {
         "-": "0.0.1",
         "@testing-library/jest-dom": "^4.2.4",
