@@ -24,6 +24,7 @@ function App() {
 
     const [filter, setFilter] = useState("all");
 
+    // thay doi trang thai hoan thanh/ chua hoan thanh
     const changeState = (id: number) => {
         const newTodoItems = todoItems.map(
             (item) => (item.id === id && { ...item, completed: !item.completed }) || item
@@ -37,6 +38,7 @@ function App() {
         // );
     };
 
+    //xoa mot todo item dua theo id
     const deleteItem = (id: number) => {
         const index = todoItems.findIndex((x) => x.id === id);
         const newTodoItems = [...todoItems];
@@ -44,6 +46,7 @@ function App() {
         setTodoItems(newTodoItems);
     };
 
+    // thay doi tab
     const changeFilter = (filter: string) => {
         setFilter(filter);
     };
@@ -70,7 +73,7 @@ function App() {
         <div className="container m-auto">
             <div className="content lg:w-2/5 md:w-5/6 m-auto">
                 <header className="app-header">
-                    <h1 className="justify-center flex text-2xl">TODO APP</h1>
+                    <h1 className="justify-center flex text-2xl font-bold m-5">TODO</h1>
                 </header>
                 <div className="content">
                     <FilterBar filter={filter} changeFilter={changeFilter}></FilterBar>
