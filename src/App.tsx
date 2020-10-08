@@ -77,7 +77,7 @@ function App() {
                 </header>
                 <div className="content">
                     <FilterBar filter={filter} changeFilter={changeFilter}></FilterBar>
-                    <FormInput addTodo={addTodo}></FormInput>
+                    <FormInput filter={filter} addTodo={addTodo}></FormInput>
                     <TodoList
                         todoItems={todoItems}
                         changeState={changeState}
