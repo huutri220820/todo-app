@@ -1,0 +1,22 @@
+.todo-list {
+    .item {
+        margin: 4px 0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        & > input {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        &:hover {
+            background-color: gainsboro;
+        }
+        &.active {
+            text-decoration: line-through;
+        }
+        i {
+            float: right;
+            padding-top: 4px;
+            cursor: pointer;
+        }
+    }
+}
